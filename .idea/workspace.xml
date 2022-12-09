@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2aa992b-4000-4f77-a1d1-f50eddec8064" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/simple-it/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/simple-it/verify.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/Data/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/Data/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/Data/Smartphone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/Manager/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/Repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProductManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/domaine/Repository/ProductRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/Manager/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/Manager/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/Repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/Repository/ProductRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +53,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.netology.domaine.Repository" />
       <recent name="ru.netology.domaine" />
     </key>
   </component>
@@ -70,22 +62,12 @@
       <command value="mvn verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductManagerTest.searchByNameSmarfone">
+  <component name="RunManager" selected="JUnit.ProductRepositoryTest.removeById">
     <configuration name="ProductManagerTest.addWhenProductNotAdded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GoodsManager" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ProductManagerTest" />
       <option name="METHOD_NAME" value="addWhenProductNotAdded" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductManagerTest.searchByNameBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GoodsManager" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductManagerTest" />
-      <option name="METHOD_NAME" value="searchByNameBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,16 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductManagerTest.searchBySeveralCreator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GoodsManager" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductManagerTest" />
-      <option name="METHOD_NAME" value="searchBySeveralCreator" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProductManagerTest.serchByNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GoodsManager" />
       <option name="PACKAGE_NAME" value="" />
@@ -121,13 +93,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductRepositoryTest.removeById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GoodsManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.domaine.Repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.domaine.Repository" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.domaine.Repository.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="removeById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.removeByNotId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GoodsManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.domaine.Repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.domaine.Repository" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.domaine.Repository.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="removeByNotId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductRepositoryTest.removeById" />
+        <item itemvalue="JUnit.ProductRepositoryTest.removeByNotId" />
         <item itemvalue="JUnit.ProductManagerTest.searchByNameSmarfone" />
         <item itemvalue="JUnit.ProductManagerTest.serchByNotFound" />
         <item itemvalue="JUnit.ProductManagerTest.addWhenProductNotAdded" />
-        <item itemvalue="JUnit.ProductManagerTest.searchBySeveralCreator" />
-        <item itemvalue="JUnit.ProductManagerTest.searchByNameBook" />
       </list>
     </recent_temporary>
   </component>

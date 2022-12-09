@@ -18,6 +18,7 @@ public class ProductManager {
         repo.addProduct(productList);
     }
 
+
     public Product[] searchBy(String text) {
         Product[] result = new Product[0]; // тут будем хранить подошедшие запросу продукты
         for (Product product : repo.showAll()) {
